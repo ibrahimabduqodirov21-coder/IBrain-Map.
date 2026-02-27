@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World History Map | 1940-2026</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="logo">Ibrain<span>🗺Map</span></div>
+        <div class="search-box">
+            <div class="input-wrapper">
+                <input type="search" id="country-search" placeholder="Search for a country or city...">
+            </div>
+            <button onclick="searchCountry()">Search</button>
+        </div>
+    </header>
+
+    <div id="map"></div>
+
+    <div class="timeline-box">
+        <div class="year-popup" id="year-bubble">2026</div>
+        <input type="range" min="1940" max="2026" value="2026" id="time-slider">
+        <div class="time-labels">
+            <span>1940</span><span>1960</span><span>1980</span><span>2000</span><span>2026</span>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

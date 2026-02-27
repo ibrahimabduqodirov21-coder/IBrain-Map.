@@ -1,0 +1,122 @@
+/* Танзимоти умумии саҳифа */
+body, html { 
+    margin: 0; 
+    padding: 0; 
+    height: 100%; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    background: #cbdbe1; 
+}
+
+/* Шапкаи сайт */
+.site-header {
+    height: 65px; 
+    background: white; 
+    display: flex; 
+    align-items: center;
+    padding: 0 25px; 
+    border-bottom: 1px solid #ddd; 
+    z-index: 1000; 
+    position: relative;
+}
+
+.logo { font-size: 22px; font-weight: bold; }
+.logo span { color: #cc4400; }
+
+.search-box { 
+    flex-grow: 1; 
+    display: flex; 
+    justify-content: center; 
+    gap: 10px; 
+}
+
+.search-box input { 
+    width: 350px; 
+    padding: 10px; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+}
+
+.search-box button { 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    border: none; 
+    cursor: pointer; 
+    background: #cc4400; 
+    color: white; 
+    transition: 0.3s; 
+}
+
+.search-box button:hover { background: #993300; }
+
+/* Танзимоти харита */
+#map { 
+    position: absolute; 
+    top: 65px; 
+    bottom: 0; 
+    width: 100%; 
+    z-index: 1; 
+    background: #cbdbe1; 
+}
+
+/* ИСЛОҲИ КВАДРАТИ СИЁҲ (FOCUS OUTLINE) */
+path.leaflet-interactive:focus,
+.leaflet-container:focus,
+#map:focus,
+.leaflet-marker-icon:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Слайдери вақт (Timeline) */
+.timeline-box {
+    position: absolute; 
+    bottom: 30px; 
+    left: 50%; 
+    transform: translateX(-50%);
+    width: 80%; 
+    max-width: 900px; 
+    background: rgba(255,255,255,0.95);
+    padding: 20px 40px; 
+    border-radius: 50px; 
+    z-index: 1000; 
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+#time-slider { 
+    width: 100%; 
+    accent-color: #b32400; 
+    cursor: pointer; 
+}
+
+.year-popup {
+    position: absolute; 
+    top: -45px; 
+    background: #b32400; 
+    color: white;
+    padding: 6px 15px; 
+    border-radius: 5px; 
+    font-weight: bold; 
+    transform: translateX(-50%);
+    transition: left 0.1s ease-out;
+}
+
+.time-labels { 
+    display: flex; 
+    justify-content: space-between; 
+    margin-top: 10px; 
+    color: #888; 
+    font-size: 13px; 
+}
+
+/* Пинҳон кардани маълумоти зиёдатии Leaflet */
+.leaflet-control-attribution { display: none !important; }
+
+/* Стиль барои нишони номи давлат */
+.country-label {
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #333;
+    border-radius: 3px;
+    padding: 2px 5px;
+    font-weight: bold;
+    color: #000;
+}
