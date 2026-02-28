@@ -120,3 +120,62 @@ path.leaflet-interactive:focus,
     font-weight: bold;
     color: #000;
 }
+.test-btn {
+    position: absolute;
+    top: 90px;
+    right: 20px;
+    padding: 12px 22px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 3000;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.quiz {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    max-width: 600px;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    z-index: 4000;
+}
+
+.hidden { display: none; }
+
+.quiz button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.next-btn { background: #007bff; color: white; border: none; }
+.close-btn { background: #cc0000; color: white; border: none; }
+/* Кнопка теста истории (тасвир мисли test-btn) */
+#start-history-test {
+    position: absolute;
+    top: 140px; /* ҷойгиршавӣ поён аз кнопкаи география */
+    right: 20px;
+    padding: 12px 22px;
+    background: #007bff; /* ранг дигар барои фарқ */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 3000;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#start-history-test:hover {
+    background: #0056b3;
+}
